@@ -5,6 +5,7 @@ console.log("Hello this is my third line");
 var myname = "rio";
 let lastname = "Landa";
 
+// this is an exmaple of a for lop that loops 10 times and print my name
 for (let i = 0; i <= 9; i = i + 1) {
   console.log(myname);
 }
