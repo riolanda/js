@@ -1,21 +1,18 @@
-console.log("Hello, World!");
 
-console.log("Hello this is javascript");
-console.log("Hello this is my third line");
 var myname = "rio";
 let lastname = "Landa";
 
 // this is an exmaple of a for lop that loops 10 times and print my name
-for (let i = 0; i <= 9; i = i + 1) {
+for (let i = 0; i <= 9; i = i + 1){
   console.log(myname);
 }
 
 //var = keyword for global variables
-// let = keyword for local variables
+//let = keyword for local variables
 
 var number = 5;
 
-while (number < 15) {
+while (number < 15){
   console.log(number);
   number = number + 1;
 }
@@ -26,14 +23,14 @@ if (number == 15) {
   console.log("number is 15");
 
 
-} else if (number == 16) {
+} else if (number == 16){
   console.log("number is 16");
 
-} else {
+} else{
   console.log("number is bigger than 16");
 } 
 
-function saygoodbye() {
+function saygoodbye(){
   console.log("this is my first javascript code");
 }
 
