@@ -4,7 +4,6 @@ console.log("Hello world");
 // variable delcarations
 /// var -> global scope
 /// let -> block scope
-
 var myname = "rio";
 let lastname = "Landa";
 
@@ -23,7 +22,6 @@ while (number < 15){
   number = number + 1;
 }
 
-//break point?
 console.log(number);
 
 if (number == 15) {
