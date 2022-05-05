@@ -1,7 +1,7 @@
 var fs = require('fs')
 var data = {
-    name: "john",
-    score: 7
+    name: "Bob",
+    score: 10
 }
 var readdata  = fs.readFileSync("file1.json")
 var parseddata = JSON.parse(readdata)

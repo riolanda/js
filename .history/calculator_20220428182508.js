@@ -1,0 +1,36 @@
+
+
+function addiotion(number1, number2){
+    return number1 + number2
+}
+
+function multiplication(number1, number2){
+    return number1* number2
+}
+
+function subtraction(number1, number2){
+    return number1 - number2
+}
+
+function divison(number1,number2){
+    return number1 / number2
+}
+
+var prompt = require('prompt-sync')()
+
+var firstnumber = prompt("Enter a random number")
+var secondnumber = promt("Enter a second number")
+var operator = prompt("What operation do you want to do?")
+
+if (operator == "+"){
+    console.log(addiotion(parseInt(firstnumber),parseInt(secondnumber)))
+}
+else if (operator == "-"){
+    console.log(subtraction(parseInt(firstnumber), parseInt(secondnumber)))
+}
+else if (operator == "*"){
+    console.log(multiplication(parseInt(firstnumber), parseInt(secondnumber)))
+}
+else if (operator == "/"){
+    console.log(divison(parseInt(firstnumber), parseInt(secondnumber)))
+}
