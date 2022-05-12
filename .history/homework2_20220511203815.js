@@ -12,3 +12,10 @@
 //create 1 monster
 // let user create a monster
 //display who won in a battle
+
+class monster {
+    constructor(name, year) {
+      this.height = name;
+      this.weight = year;
+    }
+  }
