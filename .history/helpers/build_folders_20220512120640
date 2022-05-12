@@ -1,0 +1,44 @@
+import os 
+
+# root Directory path
+# root_dir = "/Users/aj/git/rio/js"
+
+root_dir =  "/Users/aj/git/pers/test_gcp/new_folder_test"
+numb_of_lessons = 2
+
+def build_folder_struc(folder_num,root_dir):
+
+    #iterate through the number of lessons
+    # folder = lesson number
+
+    for counter in range(folder_num):
+        if counter < 10:
+            lesson_folder = "lesson" +"-"+ "0"+ str(counter)
+        else:
+            lesson_folder = "lesson" +"-"+  str(counter)
+        path = os.path.join(root_dir, lesson_folder )
+
+        #create the subfolders homework,doc
+
+        for i in [ "homework", "docs"]:
+            if  os.path.exists(i):
+                pass
+            
+            elif not os.path.exists(i):
+                try:
+                    os.mkdir(path)
+                except OSError as error:
+                    print(error) 
+                new_path=os.path.join(path, i )
+                try:
+                    os.mkdir(new_path)
+                except OSError as error:
+                    print(error) 
+                
+
+if __name__ == "__main__":
+    build_folder_struc(numb_of_lessons,root_dir)
+
+
+
+
