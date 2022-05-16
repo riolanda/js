@@ -2,7 +2,7 @@ import os
 
 # root Directory path
 root_dir =  "/Users/aj/git/rio/js/lessons"
-numb_of_lessons = 9
+numb_of_lessons = 7
 
 def build_folder_struc(folder_num,root_dir):
 
