@@ -1,33 +1,31 @@
 // class car(engine, body, interior)
+//TODO: import class from files
 
 
-
-
-class aengine{
+class engine{
     constructor(engine){
         this.engine = engine;
-
 
     }
 }
 
-class abody extends aengine{
-    constructor(body){
-        super(aengine);
+class body extends engine{
+    constructor(engine, body){
+        super(engine);
         this.body = body;
         
     }
 }
 
-class acar extends abody{
-    constructor(car){
-        super(aengine, abody);
+class car extends body{
+    constructor(engine, body,car){
+        super(engine, body);
         this.car = car;
         
     }
 }
 
-var riocar = new acar("v8", "convertible", "bmw") 
+var riocar = new car("v8", "convertible", "bmw") 
 console.log(riocar.engine)
 console.log(riocar.body)
 console.log(riocar.car)
