@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="canvas" width="200" height="100"></canvas>
+<br> <br>
+<canvas id="canvas2" width="200" height="200"></canvas>
+<script>
+var canvas = document.getElementById("canvas")
+var context= canvas.getContext("2d")
+context.moveTo(0,0)
+context.lineTo(200,100)
+context.stroke()
+
+var canvas2 = document.getElementById("camvas2")
+var context2 = canvas.getContext("2d")
+context2.beginPath()
+context2.arc(100, 100, 100, 0, Math.PI*2)
+context2.stroke()
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

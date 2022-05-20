@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<body>
+
+<canvas id="chart" width="200" height="200"></canvas>
+
+<script>
+var x_value = ["england", "scotland","wales","london","bir"]
+var y_values = [50, 45, 45,45, 40]
+var colors = ["red", "orange", "green", "brown", "pink"]
+
+new Chart("chart", 
+{
+    type:"bar",
+    data:{
+        labels:x_value,
+        datasets:[{
+            backgroundColor:colors,
+            data:y_values
+        }]
+    },
+    options:{
+        title:{
+            display:true,
+            text:"random countries"
+        }
+    }
+}
+)
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
