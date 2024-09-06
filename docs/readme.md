@@ -83,7 +83,7 @@ link to article for var let const [var let const](https://www.geeksforgeeks.org/
 - list of strings
 
 ```javascript
-var cities = ["london", "washington"];
+var cities = ["London", "Washington", "Dubai"];
 ```
 
 ---
